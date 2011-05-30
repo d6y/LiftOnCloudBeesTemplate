@@ -1,0 +1,7 @@
+email.sender=youd@example.com
+
+# Sendgrid.com configuration:
+mail.smtp.host=smtp.sendgrid.net
+mail.user=you@example.com
+mail.password=password
+
