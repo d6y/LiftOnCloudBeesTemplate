@@ -1,7 +1,8 @@
 import sbt._
 import de.element34.sbteclipsify._
+import reaktor.scct.ScctProject
 
-class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclipsify  with bees.RunCloudPlugin {
+class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclipsify  with bees.RunCloudPlugin with ScctProject {
   val liftVersion = "2.3"
 
   override def beesUsername = Some("username")
