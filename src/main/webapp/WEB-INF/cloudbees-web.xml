@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">
 
-<appid>USERNAME/APP_NAME</appid>
-
  <!-- This servlet context parameter will only be visible when running via CloudBees. -->
 <context-param>
   <param-name>run.mode</param-name>
