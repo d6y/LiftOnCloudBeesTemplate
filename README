@@ -1,6 +1,6 @@
-Lift CloudBees Project Shell
+Lift on CloudBees Template
 
-LCBPS is based on the Lift 2.3 archive from http://liftweb.net/download. 
+LoCB is based on the Lift 2.3 archive from http://liftweb.net/download. 
 
     Scala 2.8.1
     Lift 2.3
