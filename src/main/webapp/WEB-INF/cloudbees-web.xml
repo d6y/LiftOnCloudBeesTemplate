@@ -11,6 +11,19 @@
  <param name="username" value="USERNAME" />
  <param name="password" value="PASSWORD" />
  <param name="url" value="jdbc:cloudbees://JNDI_NAME" />
+
+ <!-- Connection Pool settings: http://commons.apache.org/dbcp/configuration.html -->
+ <param name="maxActive" value="10" />
+ <param name="maxIdle" value="2" />
+ <param name="maxWait" value="15000" />
+ <param name="removeAbandoned" value="true" />
+ <param name="removeAbandonedTimeout" value="300" />
+ <param name="logAbandoned" value="true" />
+
+ <!-- Avoid idle timeouts -->
+ <param name="validationQuery" value="SELECT 1" />
+ <param name="testOnBorrow" value="true" />
+
 </resource>
 
 </cloudbees-web-app>

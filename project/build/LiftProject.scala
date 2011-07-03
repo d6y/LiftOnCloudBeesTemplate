@@ -11,7 +11,7 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclips
 	  
   // uncomment the following if you want to use the snapshot repo
   //  val scalatoolsSnapshot = ScalaToolsSnapshots
-  lazy val liftModulesRelease = "liftmodules repository" at " http://repository-liftmodules.forge.cloudbees.com/release/"
+  lazy val liftModulesRelease = "liftmodules repository" at "http://repository-liftmodules.forge.cloudbees.com/release/"
 
   override def jettyWebappPath = webappPath
   override def scanDirectories = Nil
