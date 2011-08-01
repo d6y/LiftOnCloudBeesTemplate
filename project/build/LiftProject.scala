@@ -3,7 +3,7 @@ import de.element34.sbteclipsify._
 import reaktor.scct.ScctProject
 
 class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclipsify  with bees.RunCloudPlugin with ScctProject {
-  val liftVersion = "2.3"
+  val liftVersion = "2.4-M1"
 
   override def beesUsername = Some("username")
   override def beesApplicationId = Some("username/appname")
@@ -34,7 +34,7 @@ class LiftProject(info: ProjectInfo) extends DefaultWebProject(info) with Eclips
     //testing
     "org.mortbay.jetty" % "jetty" % "6.1.22" % "test",
     "junit" % "junit" % "4.5" % "test",
-    "org.scala-tools.testing" %% "specs" % "1.6.6" % "test",
+    "org.scala-tools.testing" %% "specs" % "1.6.8" % "test",
     
     //Provided
     "javax.servlet" % "servlet-api" % "2.5" % "provided->default"
