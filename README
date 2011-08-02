@@ -1,9 +1,10 @@
 Lift on CloudBees Template
 
 LoCB is based on the Lift 2.3 archive from http://liftweb.net/download. 
+This build is for ::
 
-    Scala 2.8.1
-    Lift 2.3
+    Scala 2.9
+    Lift 2.4-M3
     SBT 0.7.7
 
 It has several SBT plugins added for convenience.
@@ -69,28 +70,3 @@ Running & deploying
 4. > eclipse 
 5. > jetty
 6. > bees-deploy
-
-
-Eclipse 
-
- There is an issue with lift 2.3 & SbtEclipsify, you can read about it and the workround here:
- 
-    https://github.com/musk/SbtEclipsify/issues/11
-
-  The short version is:
-  
-  Add Scala compiler as a library to the project, refresh the project and rebuild. 
-
-Removing the Cloud Bees plugin
-
-        From ./project/build/LiftProject.scala remove:
-        
-         with bees.RunCloudPlugin
-          override def beesUsername = Some("username")
-          override def beesApplicationId = Some("username/appname") 
-
-        and from ./project/plugins/Plugins.scala  remove:
-               
-            lazy val sonatypeRepo = "sonatype.repo" at "https://oss.sonatype.org/content/groups/public"
-            lazy val cloudbees = "eu.getintheloop" % "sbt-cloudbees-plugin" % "0.2.7"
- 
