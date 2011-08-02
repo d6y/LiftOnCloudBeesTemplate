@@ -1,9 +1,10 @@
 Lift on CloudBees Template
 
 LoCB is based on the Lift 2.3 archive from http://liftweb.net/download. 
+This build is for ::
 
     Scala 2.9
-    Lift 2.4-M1
+    Lift 2.4-M3
     SBT 0.7.7
 
 It has several SBT plugins added for convenience.
