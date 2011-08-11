@@ -5,30 +5,22 @@ This build is for ::
 
     Scala 2.9
     Lift 2.4-M3
-    SBT 0.7.7
+    SBT 0.10.1
 
 It has several SBT plugins added for convenience.
 
      sbt-eclipsify 
-     sbt-scct-for-2.8 
      sbt-cloudbees-plugin
- 
 
 Getting started:
 
-Before firing up SBT update the project name in project/build.properties 
+Before firing up SBT update the project name in build.sbt
 
-If you are going to use cloud bees you'll want to update the following: 
+If you are going to use Run@CloudBees you'll want to update the following: 
 
          ~/.bees/bees.config is populated with your key & secret. 
             bees.api.key=API_KEY
             bees.api.secret=SECRET  
-
-         ./project/build/LiftProject.scala contains your username and applicationId 
-
-
-          override def beesUsername = Some("username")
-          override def beesApplicationId = Some("username/appname")
 
         ./src/main/resources/props/production.default.props
           //Sendgrid conf
@@ -70,3 +62,5 @@ Running & deploying
 4. > eclipse 
 5. > jetty
 6. > bees-deploy
+
+
